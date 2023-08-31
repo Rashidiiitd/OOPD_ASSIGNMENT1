@@ -1,0 +1,18 @@
+ # Makefile for compiling Indian_Bank and Spain_Bank
+
+# Compile Indian_Bank
+indian_debug: Indian_Bank.cpp
+	g++ -Wall -std=c++11 -g -o Indian_Bank_debug Indian_Bank.cpp
+
+indian_optimized: Indian_Bank.cpp
+	g++ -Wall -std=c++11 -O3 -o optimized_Indian_Bank Indian_Bank.cpp
+
+# Compile Spain_Bank
+spain_debug: Spain_Bank.cpp
+	g++ -Wall -std=c++11 -g -o Spain_Bank_debug Spain_Bank.cpp
+
+spain_optimized: Spain_Bank.cpp
+	g++ -Wall -std=c++11 -O3 -o optimized_Spain_Bank Spain_Bank.cpp
+
+clean:
+	rm -f Indian_Bank_debug optimized_Indian_Bank Spain_Bank_debug optimized_Spain_Bank
