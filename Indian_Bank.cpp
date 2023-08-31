@@ -36,7 +36,7 @@ double getInvestedValue(Bank_of_India arr[], int year_invested, double amount_in
     }
     return invested_Value;
 }
-
+// Starting Point of the program
 int main() {
     Bank_of_India arr[100];
     ifstream mycsvfile("india.csv.csv");
